@@ -1,0 +1,9 @@
+
+<section *ngIf="brandDetails._id" class="d-flex justify-content-center mt-5 mb-4  align-items-center ">
+  <div class="card border-2  rounded shadow  brand">
+    <img [routerLink]="['/home']" class="w-100 mb-3" [src]="brandDetails.image" [alt]="brandDetails.name" />
+    <div class="card-body bg-main-light">
+      <h5  class="card-title ">{{brandDetails.name}}</h5>
+    </div>
+  </div>
+</section>
